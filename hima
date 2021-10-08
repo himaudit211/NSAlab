@@ -1,0 +1,358 @@
+exam@debian:~/FISAT/Day3$ mkdir FISAT
+exam@debian:~/FISAT/Day3$ cd FISAT
+exam@debian:~/FISAT/Day3/FISAT$ mkdir Day1 Day2 Day3
+exam@debian:~/FISAT/Day3/FISAT$ cd Day1
+exam@debian:~/FISAT/Day3/FISAT/Day1$ cat >f1.txt f2.txt f3.txt
+cat: f2.txt: No such file or directory
+cat: f3.txt: No such file or directory
+exam@debian:~/FISAT/Day3/FISAT/Day1$ cat >f1.txt
+exam@debian:~/FISAT/Day3/FISAT/Day1$ cat >f2.txt
+exam@debian:~/FISAT/Day3/FISAT/Day1$ cat >f3.txt
+exam@debian:~/FISAT/Day3/FISAT/Day1$ cd ..
+exam@debian:~/FISAT/Day3/FISAT$ cd Day2
+exam@debian:~/FISAT/Day3/FISAT/Day2$ cat >m1.txt
+exam@debian:~/FISAT/Day3/FISAT/Day2$ cat >m2.txt
+exam@debian:~/FISAT/Day3/FISAT/Day2$ cd ..
+exam@debian:~/FISAT/Day3/FISAT$ cd Day3
+exam@debian:~/FISAT/Day3/FISAT/Day3$ cat >c1.txt
+exam@debian:~/FISAT/Day3/FISAT/Day3$ cat >c2.txt
+exam@debian:~/FISAT/Day3/FISAT/Day3$ cat >m1.txt
+Have a nice day.
+Nice to meet you.
+exam@debian:~/FISAT/Day3/FISAT/Day3$ cat >m2.txt
+Thanku 
+bye
+exam@debian:~/FISAT/Day3/FISAT/Day3$ cat m2.txt >>m1.txt
+exam@debian:~/FISAT/Day3/FISAT/Day3$ cd ..
+exam@debian:~/FISAT/Day3/FISAT$ cd Day3
+exam@debian:~/FISAT/Day3/FISAT/Day3$ cat >m3.txt
+exam@debian:~/FISAT/Day3/FISAT/Day3$ cat m1.txt >>m3.txt
+exam@debian:~/FISAT/Day3/FISAT/Day3$ cat m3.txt
+Have a nice day.
+Nice to meet you.
+Thanku 
+bye
+exam@debian:~/FISAT/Day3/FISAT/Day3$ 
+exam@debian:~$ mkdir fisat
+exam@debian:~$ cd fisat
+exam@debian:~/fisat$ mkdir Day1 Day2 Day3
+exam@debian:~/fisat$ cd Day1
+exam@debian:~/fisat/Day1$ cat >f1.txt f2.txt f3.txt
+cat: f2.txt: No such file or directory
+cat: f3.txt: No such file or directory
+exam@debian:~/fisat/Day1$ cat >f1.txt
+exam@debian:~/fisat/Day1$ cat >f2.txt
+exam@debian:~/fisat/Day1$ cd ~
+exam@debian:~$ ls
+Desktop    Downloads  FISAT  javaexam16  Pictures  public_html  Videos
+Documents  fisat      hima   Music       Public    Templates
+exam@debian:~$ cd FISAT
+exam@debian:~/FISAT$ LS
+bash: LS: command not found
+exam@debian:~/FISAT$ ls
+Day1  Day2  Day3
+exam@debian:~/FISAT$ cd Day1
+exam@debian:~/FISAT/Day1$ ls
+f1  f2  f3
+exam@debian:~/FISAT/Day1$ cd ..
+exam@debian:~/FISAT$ cd Day2
+exam@debian:~/FISAT/Day2$ ls
+m1  m2
+exam@debian:~/FISAT/Day2$ cd Day3
+bash: cd: Day3: No such file or directory
+exam@debian:~/FISAT/Day2$ cd ..
+exam@debian:~/FISAT$ cd Day3
+exam@debian:~/FISAT/Day3$ ls
+c1  c2  c3.txt  Day3  Fisat  FISAT  m1.txt  m2.txt  m3.txt
+exam@debian:~/FISAT/Day3$ rm m3.txt
+exam@debian:~/FISAT/Day3$ ls
+c1  c2  c3.txt  Day3  Fisat  FISAT  m1.txt  m2.txt
+exam@debian:~/FISAT/Day3$ rmdir Fisat
+exam@debian:~/FISAT/Day3$ rmdir FISAT
+rmdir: failed to remove 'FISAT': Directory not empty
+exam@debian:~/FISAT/Day3$ cat m3.txt
+cat: m3.txt: No such file or directory
+exam@debian:~/FISAT/Day3$ cd ..
+exam@debian:~/FISAT$ cat m1
+cat: m1: No such file or directory
+exam@debian:~/FISAT$ cat m1.txt
+cat: m1.txt: No such file or directory
+exam@debian:~/FISAT$ cd Day2
+exam@debian:~/FISAT/Day2$ cat m1
+exam@debian:~/FISAT/Day2$ cat >m1.txt
+Have a nice day.
+Nice to meet you.
+exam@debian:~/FISAT/Day2$ cat >m2.txt
+Thanku 
+bye
+exam@debian:~/FISAT/Day2$ cat m2.txt >>m1.txt
+exam@debian:~/FISAT/Day2$ cat >m3.txt
+exam@debian:~/FISAT/Day2$  cat m1.txt >>m3.txt
+exam@debian:~/FISAT/Day2$ cat m3.txt
+Have a nice day.
+Nice to meet you.
+Thanku 
+bye
+exam@debian:~/FISAT/Day2$ ls
+m1  m1.txt  m2  m2.txt  m3.txt
+exam@debian:~/FISAT/Day2$ rm m2
+exam@debian:~/FISAT/Day2$ rm1
+bash: rm1: command not found
+exam@debian:~/FISAT/Day2$ rm m1
+exam@debian:~/FISAT/Day2$ ls
+m1.txt  m2.txt  m3.txt
+exam@debian:~/FISAT/Day2$ cd ..
+exam@debian:~/FISAT$ cd Day3
+exam@debian:~/FISAT/Day3$ cp -a m3 Day3
+cp: cannot stat 'm3': No such file or directory
+exam@debian:~/FISAT/Day3$ cd ..
+exam@debian:~/FISAT$ cd Day2
+exam@debian:~/FISAT/Day2$ cp -a m3 Day3
+cp: cannot stat 'm3': No such file or directory
+exam@debian:~/FISAT/Day2$ cd ..
+exam@debian:~/FISAT$ cd Day 3
+bash: cd: too many arguments
+exam@debian:~/FISAT$ cd Day3
+exam@debian:~/FISAT/Day3$ cp -a m3.txt Day3
+cp: cannot stat 'm3.txt': No such file or directory
+exam@debian:~/FISAT/Day3$ cd ..
+exam@debian:~/FISAT$ cd Day2
+exam@debian:~/FISAT/Day2$ cp -a m3.txt Day3
+exam@debian:~/FISAT/Day2$ cd ..
+exam@debian:~/FISAT$ cd Day3
+exam@debian:~/FISAT/Day3$ cp -a m3.txt Day3/c3.txt
+cp: failed to access 'Day3/c3.txt': Not a directory
+exam@debian:~/FISAT/Day3$ ls
+c1  c2  c3.txt  Day3  FISAT  m1.txt  m2.txt
+exam@debian:~/FISAT/Day3$ cd ..
+exam@debian:~/FISAT$ cd Day1
+exam@debian:~/FISAT/Day1$ ls
+f1  f2  f3
+exam@debian:~/FISAT/Day1$ cd ..
+exam@debian:~/FISAT$ cd Day2
+exam@debian:~/FISAT/Day2$ ls
+Day3  m1.txt  m2.txt  m3.txt
+exam@debian:~/FISAT/Day2$ rmdir Day3
+rmdir: failed to remove 'Day3': Not a directory
+exam@debian:~/FISAT/Day2$ cd ..
+exam@debian:~/FISAT$ cd Day3
+exam@debian:~/FISAT/Day3$ ls
+c1  c2  c3.txt  Day3  FISAT  m1.txt  m2.txt
+exam@debian:~/FISAT/Day3$ rm m1.txt
+exam@debian:~/FISAT/Day3$ rm m2.txt
+exam@debian:~/FISAT/Day3$  cp -a m3.txt Day3
+cp: cannot stat 'm3.txt': No such file or directory
+exam@debian:~/FISAT/Day3$ cp -a ~/m3.txt./ Day3
+cp: cannot stat '/home/exam/m3.txt./': No such file or directory
+exam@debian:~/FISAT/Day3$ cp -a ~/m3.txt Day3
+cp: cannot stat '/home/exam/m3.txt': No such file or directory
+exam@debian:~/FISAT/Day3$ cd ..
+exam@debian:~/FISAT$ cd Day2
+exam@debian:~/FISAT/Day2$ cp -a ~/m3.txt Day3
+cp: cannot stat '/home/exam/m3.txt': No such file or directory
+exam@debian:~/FISAT/Day2$ chmod -a + w f1.txt
+chmod: invalid mode: ‘-a’
+Try 'chmod --help' for more information.
+exam@debian:~/FISAT/Day2$ chmod a + w f1.txt
+chmod: invalid mode: ‘a’
+Try 'chmod --help' for more information.
+exam@debian:~/FISAT/Day2$ chmod -i + w f1.txt
+chmod: invalid option -- 'i'
+Try 'chmod --help' for more information.
+exam@debian:~/FISAT/Day2$ ps -ef|ls -al
+total 24
+drwxr-xr-x 2 exam exam 4096 Oct  8 10:41 .
+drwxr-xr-x 5 exam exam 4096 Oct  8 10:04 ..
+-rw-r--r-- 1 exam exam   47 Oct  8 10:38 Day3
+-rw-r--r-- 1 exam exam   47 Oct  8 10:37 m1.txt
+-rw-r--r-- 1 exam exam   12 Oct  8 10:37 m2.txt
+-rw-r--r-- 1 exam exam   47 Oct  8 10:38 m3.txt
+exam@debian:~/FISAT/Day2$ chmod -c + w f1.txt
+chmod: cannot access 'w': No such file or directory
+chmod: cannot access 'f1.txt': No such file or directory
+exam@debian:~/FISAT/Day2$ chmod -c + w f1
+chmod: cannot access 'w': No such file or directory
+chmod: cannot access 'f1': No such file or directory
+exam@debian:~/FISAT/Day2$ cd ~
+exam@debian:~$ chmod -a + w f1
+chmod: invalid mode: ‘-a’
+Try 'chmod --help' for more information.
+exam@debian:~$ chmod -c + w f1
+chmod: cannot access 'w': No such file or directory
+chmod: cannot access 'f1': No such file or directory
+exam@debian:~$ cd FISAT
+exam@debian:~/FISAT$ cd DAY1
+bash: cd: DAY1: No such file or directory
+exam@debian:~/FISAT$ cd Day1
+exam@debian:~/FISAT/Day1$ chmod -a + w f1
+chmod: invalid mode: ‘-a’
+Try 'chmod --help' for more information.
+exam@debian:~/FISAT/Day1$ chmod -c + w f1
+chmod: cannot access 'w': No such file or directory
+exam@debian:~/FISAT/Day1$ chmod -c + -w f1
+chmod: cannot access '+': No such file or directory
+mode of 'f1' changed from 0644 (rw-r--r--) to 0444 (r--r--r--)
+exam@debian:~/FISAT/Day1$ cd ~
+exam@debian:~$ ls -al
+total 120
+drwxr-xr-x 21 exam exam 4096 Oct  8 10:27 .
+drwxr-xr-x  5 root root 4096 Sep  2 16:59 ..
+-rw-------  1 exam exam 5638 Oct  8 10:51 .bash_history
+-rw-r--r--  1 exam exam  220 Sep  2 16:58 .bash_logout
+-rw-r--r--  1 exam exam 3526 Sep  2 16:58 .bashrc
+drwxr-xr-x 13 exam exam 4096 Sep  3 07:31 .cache
+drwx------ 14 exam exam 4096 Oct  7 10:33 .config
+-rw-------  1 exam exam 8702 Oct  7 16:19 .dbshell
+drwxr-xr-x  2 exam exam 4096 Sep  3 07:32 Desktop
+drwxr-xr-x  2 exam exam 4096 Sep  2 17:04 Documents
+drwxr-xr-x  2 exam exam 4096 Sep  3 07:35 Downloads
+drwx------  3 exam exam 4096 Oct  5 14:58 .emacs.d
+drwxr-xr-x  5 exam exam 4096 Oct  8 10:28 fisat
+drwxr-xr-x  5 exam exam 4096 Oct  8 10:04 FISAT
+drwx------  2 exam exam 4096 Oct  8 10:02 .gnupg
+-rw-r--r--  1 exam exam 1342 Oct  8 10:26 hima
+drwxr-xr-x  2 exam exam 4096 Oct  4 09:18 javaexam16
+drwxr-xr-x  3 exam exam 4096 Sep  2 17:04 .local
+-rw-------  1 exam exam    0 Oct  5 10:59 .mongorc.js
+drwx------  5 exam exam 4096 Sep  2 17:37 .mozilla
+drwxr-xr-x  2 exam exam 4096 Sep  2 17:04 Music
+drwxr-xr-x  2 exam exam 4096 Oct  6 09:37 Pictures
+-r--r--r--  1 exam exam  901 Sep  2 17:04 .profile
+drwxr-xr-x  2 exam exam 4096 Sep  3 07:32 Public
+drwxr-xr-x  2 exam exam 4096 Sep  2 17:05 public_html
+drwx------  2 exam exam 4096 Sep  2 17:38 .ssh
+drwxr-xr-x  2 exam exam 4096 Sep  2 17:04 Templates
+drwxr-xr-x  2 exam exam 4096 Sep  2 17:04 Videos
+exam@debian:~$ ls
+Desktop    Downloads  FISAT  javaexam16  Pictures  public_html  Videos
+Documents  fisat      hima   Music       Public    Templates
+exam@debian:~$ cd FISAT
+exam@debian:~/FISAT$ cd Day1
+exam@debian:~/FISAT/Day1$ la
+bash: la: command not found
+exam@debian:~/FISAT/Day1$ ls
+f1  f2  f3
+exam@debian:~/FISAT/Day1$ cd Day2
+bash: cd: Day2: No such file or directory
+exam@debian:~/FISAT/Day1$ cd..
+bash: cd..: command not found
+exam@debian:~/FISAT/Day1$ cd ..
+exam@debian:~/FISAT$ cd Day2
+exam@debian:~/FISAT/Day2$ ls
+Day3  m1.txt  m2.txt  m3.txt
+exam@debian:~/FISAT/Day2$ cd ..
+exam@debian:~/FISAT$ cd Day3
+exam@debian:~/FISAT/Day3$ ls
+c1  c2  c3.txt  Day3  FISAT
+exam@debian:~/FISAT/Day3$ cd ..
+exam@debian:~/FISAT$ cd Day2
+exam@debian:~/FISAT/Day2$ cd ..
+exam@debian:~/FISAT$ cd Day3
+exam@debian:~/FISAT/Day3$ cd c3.txt
+bash: cd: c3.txt: Not a directory
+exam@debian:~/FISAT/Day3$ cd..
+bash: cd..: command not found
+exam@debian:~/FISAT/Day3$ cd ..
+exam@debian:~/FISAT$ cd Day2
+exam@debian:~/FISAT/Day2$ cp m3.txt ~/FISAT/Day3
+exam@debian:~/FISAT/Day2$ cd ..
+exam@debian:~/FISAT$ cd Day3
+exam@debian:~/FISAT/Day3$ ls
+c1  c2  c3.txt  Day3  FISAT  m3.txt
+exam@debian:~/FISAT/Day3$ chmod -a f1.txt
+chmod: invalid mode: ‘-a’
+Try 'chmod --help' for more information.
+exam@debian:~/FISAT/Day3$ chmod a f1.txt
+chmod: invalid mode: ‘a’
+Try 'chmod --help' for more information.
+exam@debian:~/FISAT/Day3$ chmod -c f1.txt
+chmod: missing operand after ‘f1.txt’
+Try 'chmod --help' for more information.
+exam@debian:~/FISAT/Day3$ chmod -c  -w f1
+chmod: cannot access 'f1': No such file or directory
+exam@debian:~/FISAT/Day3$ cd ~
+exam@debian:~$ cd FISAT
+exam@debian:~/FISAT$ cd Day1
+exam@debian:~/FISAT/Day1$ chmod -c  -w f1
+exam@debian:~/FISAT/Day1$ chmod -a + -w f1
+chmod: invalid mode: ‘-a,-w’
+Try 'chmod --help' for more information.
+exam@debian:~/FISAT/Day1$ chmod a+w f1
+exam@debian:~/FISAT/Day1$ ls -a
+.  ..  f1  f2  f3
+exam@debian:~/FISAT/Day1$ cd ..
+exam@debian:~/FISAT$ cd Day3
+exam@debian:~/FISAT/Day3$ rm m3.txt
+exam@debian:~/FISAT/Day3$ cd ..
+exam@debian:~/FISAT$ cd Day2
+exam@debian:~/FISAT/Day2$ cat m1.txt
+Have a nice day.
+Nice to meet you.
+Thanku 
+bye
+exam@debian:~/FISAT/Day2$ cat >m3.txt
+exam@debian:~/FISAT/Day2$ cat m1.txt >>m3.txt
+exam@debian:~/FISAT/Day2$ cp m3.txt ~/FISAT/Day3 
+ 
+exam@debian:~/FISAT/Day2$ pwd 
+/home/exam/FISAT/Day2
+exam@debian:~/FISAT/Day2$ 
+exam@debian:~/FISAT/Day2$ cd ~
+exam@debian:~$ emacs s1.sh
+exam@debian:~$ bash s1.sh
+-eMenu\n 1)Area of Circle \n 2)Area of Rectangle \n 3)Area of triangle
+Enter the choice
+1
+Area of Circle
+Enter the radius
+10
+Area:2200
+exam@debian:~$ emacs s1.sh
+exam@debian:~$ bash s1.sh
+-eMenu\n 1)Area of Circle \n 2)Area of Rectangle \n 3)Area of triangle
+Enter the choice
+1
+s1.sh: line 26: unexpected EOF while looking for matching ``'
+s1.sh: line 30: syntax error: unexpected end of file
+exam@debian:~$ emacs s1.sh
+exam@debian:~$ bash s1.sh
+-eMenu\n 1)Area of Circle \n 2)Area of Rectangle \n 3)Area of triangle
+Enter the choice
+1
+Area of Circle
+Enter the radius
+10
+expr: syntax error: unexpected argument ‘ 7’
+Area:2200
+exam@debian:~$ emacs s1.sh
+exam@debian:~$ bash s1.sh
+-eMenu\n 1)Area of Circle \n 2)Area of Rectangle \n 3)Area of triangle
+Enter the choice
+1
+Area of Circle
+Enter the radius
+10
+expr: syntax error: unexpected argument ‘ 7’
+Area:
+exam@debian:~$ emacs s1.sh
+exam@debian:~$ bash s1.sh
+-eMenu\n 1)Area of Circle \n 2)Area of Rectangle \n 3)Area of triangle
+Enter the choice
+1
+Area of Circle
+Enter the radius
+10
+Area:314
+exam@debian:~$ bash s1.sh
+-eMenu\n 1)Area of Circle \n 2)Area of Rectangle \n 3)Area of triangle
+Enter the choice
+1
+Area of Circle
+Enter the radius
+4
+Area:50
+exam@debian:~$ 
+
+
+
+
